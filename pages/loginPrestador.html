@@ -61,7 +61,7 @@
                     <p>Não possuo cadastro!
                     <a class="clique" href="../pages/">Fazer cadastro.</a> </p>
 
-                    <button type="submit">Enviar</button>
+                    <button type="submit" onclick="verifprest()">Enviar</button>
                 </form>
             </div>    
         </main>
@@ -81,7 +81,18 @@
                 //Caso contrário não mostre o Icone.
             }
         }
-        
+        function verifprest(){
+            var txtnome = document.getElementById('nome')
+            var txtsenha = document.getElementById('senha')
+
+            if(txtnome.value.length == 0 && txtsenha.value.length == 0){
+                alert(`[ERRO] Verifique os dados e tente novamente.`)
+            }
+            else{
+                alert('Parabéns os dados estão corretos.')
+                document.write(`CNPJ: ${txtnome.value} <br> SENHA: ${txtsenha.value}`)
+            }
+        }       
 
     </script>
 </body>
