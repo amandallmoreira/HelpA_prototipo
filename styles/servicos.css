@@ -19,14 +19,35 @@
   width: 100%;
   position: absolute;
 } */
+#pagina{
+  width: 100%;;
+}
  #mapa{
      padding: 0;
      margin: 0;
-     width: 70%;
-     height: 100%;
-
+     width: 50%;
+     
  }
 #servico{
     background-color: aquamarine;
-    width: 30%;
+    width: 50%;
+
+}
+
+#logo{
+  width: 80px;
+}
+button{
+  padding: 10px;
+  background-color: transparent !important;
+  border-style: none !important;
+}
+
+button, img{
+  width: 100px;
+}
+
+.col{
+  margin: 40px !important;
+  
 }
