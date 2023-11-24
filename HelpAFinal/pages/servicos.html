@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>HelpA - Serviços</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+   
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel='stylesheet' type='text/css' media='screen' href='../styles/servicos.css'>
+
+    <link rel='stylesheet' type='text/css' media='screen and (max-width : 768px)' href='../styles/@media.css'>
+    <!-- <script src='main.js'></script> -->
+</head>
+<body>
+    <div id="pagina">
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                <img src="../images/logoBranca 1.png" alt="logo HelpA" >
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../pages/index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/planos.html">Planos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/servicos.html">Serviços</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/faleconosco.html">Fale Conosco</a>
+                      </li>
+                     
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      
+                      
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+
+           
+
+            <!--MOBILE-->
+            <!-- <div id="menuMobile" onclick="abrirOpcoes()">
+                <img src="../images/menuIcon.svg" alt="icone">
+            </div> -->
+        </header>
+        <!--MENU MOBILE-->
+            <!-- <nav id="opcoesMobile">
+                <ul>
+                    <li><a href="../pages/home.html">Home</a></li>
+                    <li><a href="#">Planos</a></li>
+                    <li><a href="../pages/servicos.html">Serviços</a></li>
+                    <li><a href="#">Contatos</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+
+                </ul>
+            </nav> -->
+         <!--FIM MENU MOBILE-->
+
+        <main id="mainServico" class="container text-center">
+            <div class="row">
+                <div id="mapa" class="col" >
+                  <!-- MAPA GOOGLE MAPS -->
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.847947433418!2d-47.897306903210456!3d-15.759181000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3b1326c96187%3A0xb3df73b0a70ca443!2sMec%C3%A2nico%20Asa%20Sul!5e0!3m2!1spt-BR!2sbr!4v1700826623239!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div> 
+                <div id="servico" class="col">
+                    <h1>Serviços</h1>
+                    <div class="row">
+                      <div class="col">
+                        <button type="button" class="btn btn-light"><img src="../images/chaveiro.png" alt="Icone de chaveiro"></button>
+
+                        <button type="button" class="btn btn-light"><img src="../images/dentista.png" alt="Icone de dentista"></button>
+
+                        <button type="button" class="btn btn-light"><img src="../images/diarista.png" alt="Icone de diarista"></button>
+
+                        <button type="button" class="btn btn-light"><img src="../images/eletricista.png" alt="Icone de eletricista"></button>
+                      </div>
+
+                      <div class="col">
+                        <button type="button" class="btn btn-light"><img src="../images/encanador.png" alt="Icone de encanador"></button>
+
+                        <button type="button" class="btn btn-light"><img src="../images/enfermeiro.png" alt="Icone de enfermeiro"></button>
+                        <a href="../pages/chat.html">
+                          <button type="button" class="btn btn-light"><img src="../images/mecanico.png" alt="Icone de mecanico"></button>
+                        </a>
+
+                        
+                        <button type="button" class="btn btn-light"><img src="../images/veterinario.png" alt="Icone de veterinario"></button>
+                      </div>
+                    </div>
+                </div>
+           
+           
+                
+         
+                       
+             
+        </main>
+        <footer>
+            <p>HelpA - Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <!--JAVASCRIPT-->
+    <script>
+        function abrirOpcoes(){
+            if (opcoesMobile.style.display=='none'){
+                opcoesMobile.style.display='flex'
+                //Se o menu mobile estiver escondido então mostrar o Icone;/ = atribuição, ==comparação
+            }else{
+                opcoesMobile.style.display='none'
+                //Caso contrário não mostre o Icone.
+            }
+        }
+         
+    </script>
+        <!-- POPPER -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
